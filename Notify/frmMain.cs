@@ -26,6 +26,17 @@ namespace Notify
         {
             var args = Environment.GetCommandLineArgs();
             var msg = string.Join(" ", args.Skip(1));
+            var data = msg.Split(new[] {'|'}, StringSplitOptions.RemoveEmptyEntries);
+            if (data.Length == 2)
+            {
+                this.Text = data[0];
+                msg = data[1];
+            }
+            else if (data.Length == 1)
+            {
+                msg = data[0];
+            }
+
             lblMessage.Text = msg;
         }
     }
