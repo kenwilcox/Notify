@@ -68,6 +68,7 @@
             this.Controls.Add(this.btnClose);
             this.Name = "frmMain";
             this.Text = "Notification";
+            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
