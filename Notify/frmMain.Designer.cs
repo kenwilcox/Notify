@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblMessage = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnClose
@@ -58,6 +60,10 @@
             this.lblMessage.Text = "It\'s time to switch users!";
             this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // frmMain
             // 
             this.AcceptButton = this.btnClose;
@@ -79,6 +85,7 @@
 
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Timer timer;
     }
 }
 
