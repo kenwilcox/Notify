@@ -5,11 +5,11 @@ using System.Windows.Forms;
 
 namespace Notify
 {
-    public partial class frmMain : Form
+    public partial class FrmMain : Form
     {
         private DateTime _endTime;
 
-        public frmMain()
+        public FrmMain()
         {
             InitializeComponent();
         }
@@ -19,7 +19,7 @@ namespace Notify
             Close();
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private void FrmMain_Load(object sender, EventArgs e)
         {
             lblMessage.Text = "";
 

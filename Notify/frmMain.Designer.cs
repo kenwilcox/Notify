@@ -1,6 +1,6 @@
 ﻿namespace Notify
 {
-    partial class frmMain
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -72,11 +72,11 @@
             this.ClientSize = new System.Drawing.Size(292, 270);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnClose);
-            this.Name = "frmMain";
+            this.Name = "FrmMain";
             this.Text = "Notification";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
 
         }
